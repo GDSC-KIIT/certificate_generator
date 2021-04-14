@@ -21,7 +21,7 @@ font = ImageFont.truetype('D:\\Dev\\Python\\VS Code\\certificate_generator\\font
 for index,j in df.iterrows():
     img = Image.open('D:\\Dev\\Python\\VS Code\\certificate_generator\\Templates\\new.png')    # selecting certificate template
     draw = ImageDraw.Draw(img)
-    draw.text(xy=(900,600),text='{}'.format(j['name'].title()),fill=(1,2,3),font=font)         # Enscribing name over template
+    draw.text(xy=(990,680),text='{}'.format(j['name'].title()),fill=(1,2,3),font=font, anchor="mm")         # Enscribing name over template
     img=img.convert('RGB') 
     img.save('pictures/{}.jpg'.format(j['name']))                                              # saving the image
     fromaddr = "your-email-id@gmail.com"                                                       #Specify the E-Mail ID through which you want to send mail
