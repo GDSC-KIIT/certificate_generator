@@ -39,7 +39,7 @@ for index,j in df.iterrows():
                                                                                                # attach the body with the msg instance
     msg.attach(MIMEText(body, 'plain'))
                                                                                                # open the file to be sent
-    filename = 'pictures/{}.jpg'.format(j['name'])
+    filename = 'pictures/{}.pdf'.format(j['name'])
     attachment = open(filename, "rb")
                                                                                                # instance of MIMEBase and named as p
     p = MIMEBase('application', 'octet-stream')
