@@ -34,8 +34,7 @@ for index,j in df.iterrows():
     msg['To'] = j['Email']
     msg['Subject'] = "Certificate for Partiicipation [DSC-KIIT]"
                                                                                                # string to store the body of the mail
-    txt_file = open('body.txt', 'r')
-    body = (txt_file.read())
+    body = "Hey, Thank you for participating in our event attached below is the certificate for your Partiicipation"
                                                                                                # attach the body with the msg instance
     msg.attach(MIMEText(body, 'plain'))
                                                                                                # open the file to be sent
