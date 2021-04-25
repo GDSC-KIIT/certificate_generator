@@ -1,1 +1,10 @@
+# dependencies
 .vscode
+/node_modules
+
+# testing
+/src
+
+# misc
+.vscode
+.venv
