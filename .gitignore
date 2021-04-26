@@ -6,6 +6,7 @@
 /src
 /cert_files
 /certificates
+/public
 
 # misc
 .vscode
