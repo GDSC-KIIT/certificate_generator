@@ -32,7 +32,7 @@ for index,j in df.iterrows():
     img.save('certificates/{}.pdf'.format(j['name']))                                              # saving the image
     fromaddr = sys.argv[1]                                                                          #Specify the E-Mail ID through which you want to send mail
     password = sys.argv[2]                                                                          #Specify password of the E-Mail ID through which you want to send mail
-    toaddr = j['email']
+    toaddr = j['Email']
                                                                                                # instance of MIMEMultipart
     msg = MIMEMultipart()
                                                                                                # storing the senders email address
