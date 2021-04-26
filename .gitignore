@@ -4,6 +4,8 @@
 
 # testing
 /src
+/cert_files
+/certificates
 
 # misc
 .vscode
