@@ -15,12 +15,12 @@ import os
 import sys
 import time
 
-print("Hello")
-time.sleep(2) # Sleep for 3 seconds
-print("Byee")
-time.sleep(1) # Sleep for 3 seconds
-print("There")
-
+# print("Hello")
+# time.sleep(2) # Sleep for 3 seconds
+# print("Byee")
+# time.sleep(1) # Sleep for 3 seconds
+# print("There")
+count=1
 
 xCoordinate = int(sys.argv[3]) # 990
 yCoordinate = int(sys.argv[4]) # 680
@@ -75,7 +75,8 @@ for index,j in df.iterrows():
 
                                                                                                 # Converts the Multipart msg into a string
     text = msg.as_string()
-
+    print(f'Sucesfully sent to : {count} Particants')
+    count=count+1
     server.send_message(msg)
 
 server.quit()
