@@ -15,11 +15,6 @@ import os
 import sys
 import time
 
-# print("Hello")
-# time.sleep(2) # Sleep for 3 seconds
-# print("Byee")
-# time.sleep(1) # Sleep for 3 seconds
-# print("There")
 count=1
 
 xCoordinate = int(sys.argv[3]) # 990
