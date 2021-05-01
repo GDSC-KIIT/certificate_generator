@@ -4,6 +4,7 @@ const multer = require('multer')
 const cors = require('cors');
 const spawn = require("child_process").spawn;
 var path = require('path')
+let {PythonShell} = require('python-shell')
 
 app.use(cors())
 
@@ -46,16 +47,24 @@ app.post('/upload', function(req, res) {
 app.post('/python', multer().none(),function(req, res) {
     let params = req.body
     let imageExtension = path.extname(params.imageName)
-    var dataToSend;
-    // console.log("Working", params, imageExtension)
-    const python = spawn('python3', ['main.py', params.email, params.password, params.xCoordinate, params.yCoordinate, params.emailSubject, params.emailBody, imageExtension]);
-    python.stdout.on('data', function (data) {
-        dataToSend = data.toString();
+    let options = {
+        mode: 'text',
+        pythonOptions: ['-u'],
+        args: [params.email, params.password, params.xCoordinate, params.yCoordinate, params.emailSubject, params.emailBody, imageExtension]
+    }
+    let pyshell = new PythonShell('main.py', options);
+
+    pyshell.on('message', function (message) {
+        console.log(message)
     });
-    console.log(dataToSend)
-    python.on('close', () => {
-        res.send(dataToSend)
-    });
+
+    pyshell.end(function (err,code,signal) {
+        if (err) throw err;
+        res.send(signal)
+        console.log('The exit code was: ' + code);
+        console.log('The exit signal was: ' + signal);
+        console.log('finished');
+      });
 })
 
 app.listen(8000, function() {
