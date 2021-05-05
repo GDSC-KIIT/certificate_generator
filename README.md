@@ -83,7 +83,7 @@ or you can fill up the data in pre-existing [certificateCSV.csv](https://github.
 ### Coordinates (x,y)
 This reffers to the cordinates on them image template where name should be enscribed 
 You can find These co-ordinates through Microsoft-Paint by hovering over the desired postion and the cordinates will be diaplayed in the extreme bottom left
-## Authors
+## Contributers
 
 - [@uzair-ali10](https://github.com/uzair-ali10/)
 - [@sayamsamal](https://github.com/sayamsamal)
