@@ -80,7 +80,11 @@ You can find These co-ordinates through Microsoft-Paint by hovering over the des
 
 Here the co-ordinates are 990,680
 
-## Read from a Excel file
+# Track Progress
+You can track the progress of sending certificates through the terminal session which you used to run the command `node server` an example is shown below
+![ter_img](https://github.com/DSC-KIIT/certificate_generator/blob/main/images/ter_img.png)
+
+## Using a Excel file
 By default it expect a CSV file containing a Name and Email adress of participants, howerver we can also make it read from a Excel file by the following tweaks
 
 In the [main.py](https://github.com/DSC-KIIT/certificate_generator/blob/main/main.py) file 
