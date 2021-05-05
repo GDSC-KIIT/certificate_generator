@@ -78,6 +78,8 @@ This reffers to the cordinates on them image template where name should be enscr
 You can find These co-ordinates through Microsoft-Paint by hovering over the desired postion and the cordinates will be diaplayed in the extreme bottom left as shown below 
 ![paint_img](https://github.com/DSC-KIIT/certificate_generator/blob/main/images/paint_img.png)
 
+Here the co-ordinates are 990,680
+
 ## Read from a Excel file
 By default it expect a CSV file containing a Name and Email adress of participants, howerver we can also make it read from a Excel file by the following tweaks
 
