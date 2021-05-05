@@ -66,6 +66,7 @@ This corresponds to the font which will be used to enscribe name on the Certific
 ### CSV File 
 This file containg Name and corresponding email adress fo the participants if u choose to use an excel file here instead of .csv you can find instructions below
 
+But using a CSV file is strongly recommended
 
 Please note that the first row should be ```name```  and  `email`
 as shown below 
@@ -85,7 +86,9 @@ You can track the progress of sending certificates through the terminal session 
 ![ter_img](https://github.com/DSC-KIIT/certificate_generator/blob/main/images/ter_img.png)
 
 ## Using a Excel file
-By default it expect a CSV file containing a Name and Email adress of participants, howerver we can also make it read from a Excel file by the following tweaks
+By default it expect a CSV file containing a Name and Email adress of participants, howerver we can also make it read from a Excel file by the following tweaks 
+
+But using a CSV file is strongly recommended
 
 In the [main.py](https://github.com/DSC-KIIT/certificate_generator/blob/main/main.py) file 
 
@@ -97,6 +100,14 @@ with
 ```df = pd.read_excel('cert_files/certificateCSV.csv')```
 
 And you are ready to go
+
+
+## Caution
+Do not click the submit button in the Web-app repeatedly as this may leads to dilevering multiple certificates to a single participant 
+
+Click once and wait for approx 4-5 sec for the progress to be displayed in the terminal session
+
+It is recommended to try this once on a dummy CSV/Excel file containing your own email before trying it out on the actual CSV?Excel file
 
 ## Contributers
 
