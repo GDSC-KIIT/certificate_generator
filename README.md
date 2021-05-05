@@ -61,6 +61,11 @@ with
 And you are ready to go
 # Format of the input
 
+### Email
+This reffers to the Email-Id throgh which you wish to send E-Mails and have enabled less secure apps, Currently this works only for Gmail ID's
+### Password
+This refers to the password of the above E-mail adress
+
 ### Certificate Image
 This is the template of the Certificate
 .png and .jpeg file are accepted
