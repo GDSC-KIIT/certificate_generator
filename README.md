@@ -41,7 +41,7 @@ node server
 ```
 Access the web-app by visiting [localhost:8000](http://localhost:8000)
 
-## Screenshots
+
 
 ![prew_img](https://github.com/DSC-KIIT/certificate_generator/blob/main/images/prew_img.png)
 
