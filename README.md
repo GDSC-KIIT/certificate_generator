@@ -46,19 +46,7 @@ Access the web-app by visiting [localhost:8000](http://localhost:8000)
 ![prew_img](https://github.com/DSC-KIIT/certificate_generator/blob/main/images/prew_img.png)
 
   
-## Read from a Excel file
-By default it expect a CSV file containing a Name and Email adress of participants, howerver we can also make it read from a Excel file by the following tweaks
 
-In the [main.py](https://github.com/DSC-KIIT/certificate_generator/blob/main/main.py) file 
-
-In line 26 replace
-
- ```df = pd.read_csv('cert_files/certificateCSV.csv')```
-with 
-
-```df = pd.read_excel('cert_files/certificateCSV.csv')```
-
-And you are ready to go
 # Format of the input
 
 ### Email
@@ -89,6 +77,21 @@ or you can fill up the data in pre-existing [certificateCSV.csv](https://github.
 This reffers to the cordinates on them image template where name should be enscribed 
 You can find These co-ordinates through Microsoft-Paint by hovering over the desired postion and the cordinates will be diaplayed in the extreme bottom left as shown below 
 ![paint_img](https://github.com/DSC-KIIT/certificate_generator/blob/main/images/paint_img.png)
+
+## Read from a Excel file
+By default it expect a CSV file containing a Name and Email adress of participants, howerver we can also make it read from a Excel file by the following tweaks
+
+In the [main.py](https://github.com/DSC-KIIT/certificate_generator/blob/main/main.py) file 
+
+In line 26 replace
+
+ ```df = pd.read_csv('cert_files/certificateCSV.csv')```
+with 
+
+```df = pd.read_excel('cert_files/certificateCSV.csv')```
+
+And you are ready to go
+
 ## Contributers
 
 - [@uzair-ali10](https://github.com/uzair-ali10/)
