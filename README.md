@@ -78,7 +78,7 @@ Please note that the first row should be ```name```  and  `email`
 as shown below 
 or you can fill up the data in pre-existing [certificateCSV.csv](https://github.com/DSC-KIIT/certificate_generator/blob/main/cert_files/certificateCSV.csv) file and use it
 
-![csv_img]()
+![csv_img](https://github.com/DSC-KIIT/certificate_generator/blob/main/images/csv_img.png)
 ## Authors
 
 - [@uzair-ali10](https://github.com/uzair-ali10/)
