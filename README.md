@@ -25,14 +25,14 @@ Find instructions on how to allow less secure apps [here](https://www.youtube.co
 Clone the repository and navigate to the directory
 
 ```
-    git clone https://github.com/DSC-KIIT/certificate_generator.git
-    cd certificate_generator
+git clone https://github.com/DSC-KIIT/certificate_generator.git
+cd certificate_generator
 ```
 
 Install npm dependencies and requirements.txt
 ```
-    npm install
-    pip3 install -r requirements.txt
+npm install
+pip3 install -r requirements.txt
 ```
 ## Usage
 Run the server
