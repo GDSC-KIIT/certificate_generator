@@ -107,7 +107,7 @@ Do not click the submit button in the Web-app repeatedly as this may leads to di
 
 Click once and wait for approx 4-5 sec for the progress to be displayed in the terminal session
 
-It is recommended to try this once on a dummy CSV/Excel file containing your own email before trying it out on the actual CSV?Excel file
+It is recommended to try this once on a dummy CSV/Excel file containing your own email before trying it out on the actual CSV or Excel file
 
 ## Contributers
 
