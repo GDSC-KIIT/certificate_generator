@@ -14,7 +14,7 @@ Sending certificates for events has never been more easy
     
 
   
-![Logo](https://github.com/DSC-KIIT/certificate_generator/blob/main/images/dsc.png)
+![Logo](https://github.com/DSC-KIIT/certificate_generator/blob/main/images/dsc2.png)
 
     
 ## Installation 
