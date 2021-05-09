@@ -53,11 +53,11 @@ class App extends Component {
     textData.append('xCoordinate', this.state.xCoordinate)
     textData.append('yCoordinate', this.state.yCoordinate)
     textData.append('imageName', this.state.imageName)
-    axios.post("http://localhost:8000/upload", fileData)
+    axios.post("https://cert-gen.herokuapp.com/upload", fileData)
     .then(res => {
       console.log(res.statusText);
     })
-    axios.post("http://localhost:8000/python", textData)
+    axios.post("https://cert-gen.herokuapp.com/python", textData)
     .then(res => {
       console.log(res.data);
     })
