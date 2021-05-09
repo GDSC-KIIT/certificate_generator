@@ -1,0 +1,80 @@
+input[type=text], input[type=password], textarea, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #45a049;
+}
+
+input[type=file], select {
+  width: 100%;
+  padding: 14px 0px;
+  display: block;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-heading {
+  text-align: center;
+  padding: 0px 0px;
+  height: 4rem;
+  color: azure;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+}
+
+#title {
+  position: relative;
+  top: 25%;
+}
+
+.App-content {
+  width: 80%;
+  padding: 2rem 2rem;
+}
+
+.image-preview {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0 30%;
+  width: 70%;
+}
+
+.form-container {
+  float: left;
+  width: 20%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.form-container .form-coordinates{
+  display: flex;
+  align-items: center;  
+}
+
+.form-container .form-coordinates .coordinates{
+  margin: 0.5rem;
+}

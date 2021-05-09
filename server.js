@@ -6,6 +6,8 @@ const spawn = require("child_process").spawn;
 var path = require('path')
 let {PythonShell} = require('python-shell')
 
+const port = process.env.PORT || 3000
+
 app.use(cors())
 
 app.use(express.static(path.join(__dirname, 'build')));
@@ -67,8 +69,8 @@ app.post('/python', multer().none(),function(req, res) {
       });
 })
 
-app.listen(8000, function() {
+app.listen(port, function() {
 
-    console.log('App running on port 8000');
+    console.log('App running on port ${port}');
 
 });

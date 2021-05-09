@@ -3,10 +3,8 @@
 /node_modules
 
 # testing
-/src
 /cert_files
 /certificates
-/public
 
 # misc
 .vscode
